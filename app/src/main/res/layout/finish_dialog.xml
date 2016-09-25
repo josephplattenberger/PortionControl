@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finish_text"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/colorAccent"
+        android:theme="@style/MyButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/finishButton"
+        android:layout_below="@+id/finishDurationText"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/finishUnitsEatenText"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/finishServEatenText"
+        android:gravity="center"
+        android:layout_below="@+id/finishUnitsEatenText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/finishCalsEatenText"
+        android:gravity="center"
+        android:layout_below="@+id/finishServEatenText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/finishDurationText"
+        android:gravity="center"
+        android:layout_below="@+id/finishCalsEatenText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/are_you_sure"
+        android:id="@+id/cancelMsg"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/yes_text"
+        android:theme="@style/MyButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/yesButton"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/cancelMsg"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/no_text"
+        android:theme="@style/MyButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/noButton"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/cancelMsg"
+        android:layout_toStartOf="@+id/yesButton"
+        android:layout_marginEnd="8dp"/>
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/phablet_activity_vertical_margin"
+    android:paddingLeft="@dimen/phablet_activity_horizontal_margin"
+    android:paddingRight="@dimen/phablet_activity_horizontal_margin"
+    android:paddingTop="@dimen/phablet_activity_vertical_margin"
+    tools:context="com.josephplattenberger.portioncontrol.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/units_per_serv"
+        android:textSize="36sp"
+        android:id="@+id/unitsPerServText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="end"
+        android:layout_alignBottom="@+id/unitsPerServInput"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/unitsPerServInput"
+        android:layout_marginEnd="5dp"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textSize="36sp"
+        android:maxLength="4"
+        android:id="@+id/unitsPerServInput"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cals_per_serv"
+        android:textSize="36sp"
+        android:id="@+id/calsPerServText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="end"
+        android:layout_toStartOf="@+id/calsPerServInput"
+        android:layout_alignBottom="@+id/calsPerServInput"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="36sp"
+        android:ems="10"
+        android:maxLength="4"
+        android:id="@+id/calsPerServInput"
+        android:layout_below="@+id/unitsPerServInput"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="36sp"
+        android:ems="10"
+        android:maxLength="4"
+        android:id="@+id/totalCalsInput"
+        android:layout_below="@+id/calsPerServInput"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/duration_snack_text"
+        android:textSize="36sp"
+        android:id="@+id/durationSnackText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/totalCalsInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hours_text"
+        android:textSize="28sp"
+        android:id="@+id/hoursText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/hourPicker"
+        android:layout_alignTop="@+id/hourPicker"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/minutes_text"
+        android:textSize="28sp"
+        android:id="@+id/minutesText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/minutePicker"
+        android:layout_alignTop="@+id/minutePicker"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="16dp"/>
+
+    <NumberPicker
+        android:layout_width="80dp"
+        android:layout_height="240dp"
+        android:id="@+id/minutePicker"
+        android:layout_below="@+id/durationSnackText"
+        android:layout_toStartOf="@+id/minutesText"/>
+
+    <NumberPicker
+        android:layout_width="80dp"
+        android:layout_height="240dp"
+        android:id="@+id/hourPicker"
+        android:layout_below="@+id/durationSnackText"
+        android:layout_toEndOf="@+id/hoursText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:id="@+id/timeBetweenUnits"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/hourPicker"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:textSize="28sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/start_text"
+        android:id="@+id/startButton"
+        android:layout_below="@+id/timeBetweenUnits"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_cals"
+        android:textSize="36sp"
+        android:id="@+id/caloriesEatenText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="end"
+        android:layout_toStartOf="@+id/totalCalsInput"
+        android:layout_alignBottom="@+id/totalCalsInput"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"/>
+</RelativeLayout>

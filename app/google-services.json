@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "284779291994",
+    "firebase_url": "https://portion-control.firebaseio.com",
+    "project_id": "portion-control",
+    "storage_bucket": "portion-control.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284779291994:android:844aa9676617f3e4",
+        "android_client_info": {
+          "package_name": "com.josephplattenberger.portioncontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284779291994-b0ukeudq7qe2cpmpit9dltrr0hu2nebl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACL_4pjo7_cOtfUfk9dl8OG9n9heDnlVc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
